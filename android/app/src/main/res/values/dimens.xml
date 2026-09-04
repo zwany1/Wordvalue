@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="keyboard_height">260dp</dimen>
+    <dimen name="key_height">46dp</dimen>
+    <dimen name="key_margin">3dp</dimen>
+    <dimen name="key_text_size">17sp</dimen>
+    <dimen name="panel_padding">12dp</dimen>
+    <dimen name="card_radius">14dp</dimen>
+</resources>

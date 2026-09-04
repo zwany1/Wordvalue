@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">言值</string>
+    <string name="ime_name">言值输入法</string>
+
+    <string name="ai_panel_title">✨ 高情商 AI</string>
+    <string name="ai_action_generate">AI 生成</string>
+    <string name="ai_action_refresh">换一个</string>
+    <string name="ai_action_recovery">💔 挽回</string>
+    <string name="ai_action_autopilot">🤖 自动规划</string>
+    <string name="ai_action_consult">🧠 顾问</string>
+    <string name="ai_action_keyboard">普通输入</string>
+    <string name="ai_action_copy">读取剪贴板</string>
+    <string name="ai_action_use">使用</string>
+    <string name="ai_clipboard_hint">在微信长按对方消息 → 复制，或直接在下方输入</string>
+    <string name="ai_manual_hint">手动输入对方说的话…</string>
+    <string name="ai_generating">正在分析并生成回复…</string>
+    <string name="ai_generating_retry">云端繁忙，自动重试中…</string>
+    <string name="ai_empty_replies">还没有回复，点击「AI 生成」试试</string>
+    <string name="ai_inserted">已填入输入框，回微信发送即可</string>
+
+    <string name="style_natural">🌿 自然</string>
+    <string name="style_gentle">❤️ 温柔</string>
+    <string name="style_funny">😂 幽默</string>
+
+    <string name="key_back_to_ai">AI</string>
+    <string name="key_shift">⇧</string>
+    <string name="key_backspace">⌫</string>
+    <string name="key_space">空格</string>
+    <string name="key_enter">↵</string>
+    <string name="key_letters">ABC</string>
+    <string name="key_pinyin_on">中</string>
+    <string name="key_pinyin_off">英</string>
+    <string name="key_comma">，</string>
+    <string name="key_period">。</string>
+    <string name="key_mode_letters">abc</string>
+
+    <string name="home_title">言值</string>
+    <string name="home_subtitle">AI 帮你想，你来发</string>
+    <string name="btn_enable_ime">去系统设置启用输入法</string>
+    <string name="btn_switch_ime">切换到言值输入法</string>
+    <string name="section_style">默认回复风格</string>
+    <string name="section_history">保存聊天记录</string>
+    <string name="style_natural_plain">自然</string>
+    <string name="style_gentle_plain">温柔</string>
+    <string name="style_funny_plain">幽默</string>
+    <string name="ime_enabled">✅ 已启用</string>
+    <string name="ime_not_enabled">未启用，点击下方按钮开启</string>
+    <string name="history_keep">保存</string>
+    <string name="history_skip">不保存</string>
+    <string name="usage_steps">使用步骤：\n1. 在系统设置里启用「言值输入法」并切换\n2. 在微信长按对方消息 → 复制\n3. 键盘上点击「AI 生成」\n4. 点击喜欢的回复自动填入微信输入框</string>
+    <string name="api_config_title">后台生成配置</string>
+    <string name="api_config_hint">OpenAI 兼容接口（DeepSeek / 通义 / Kimi / 中转站）。配置后云端优先生成，请求失败或未启用时自动回退本地（模型/规则）。此入口不对外展示。</string>
+    <string name="api_base_url_label">接口地址（Base URL）</string>
+    <string name="api_key_label">API Key</string>
+    <string name="api_model_label">模型名</string>
+    <string name="api_enabled_label">启用云端生成</string>
+    <string name="api_save">保存</string>
+    <string name="api_saved_toast">已保存</string>
+
+</resources>

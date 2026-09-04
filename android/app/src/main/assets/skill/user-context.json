@@ -1,0 +1,22 @@
+{
+  "profile": {
+    "sections": ["基本信息", "兴趣与特长", "社交风格", "人设定位", "故事素材"],
+    "collectionScript": "先跟我聊聊你自己。你平时都玩什么，有什么爱好或者特长？工作是做什么的？不用谦虚，有什么觉得自己还不错的地方都说说，我帮你梳理一下你的核心竞争力。",
+    "rules": [
+      "话术涉及用户兴趣、经历、特长时必须基于档案真实信息，档案没有的先问用户，绝不编造",
+      "人设定位来自真实性格标签，不是表演"
+    ]
+  },
+  "target": {
+    "fields": ["nickname", "platform", "firstMeetDate", "stage", "interestScore", "lastInteraction", "relationshipStatus"],
+    "tracksFacts": true,
+    "tracksPreferences": true,
+    "tracksEvents": true,
+    "consistencyRules": [
+      "阶段不能无理由倒退",
+      "已知信息不能矛盾，除非用户纠正",
+      "建议要有延续性：上次建议先冷两天，这次先追踪效果再给新建议"
+    ],
+    "matchFlow": ["识别称呼", "匹配已有档案", "匹配成功输出上次进度摘要", "新目标创建档案"]
+  }
+}

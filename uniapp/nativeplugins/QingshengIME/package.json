@@ -1,0 +1,19 @@
+{
+  "name": "QingshengIME",
+  "id": "QingshengIME",
+  "version": "1.0.0",
+  "description": "高情商输入法原生能力桥：输入法状态、模型管理、设置与历史记录",
+  "_dp_type": "nativeplugin",
+  "_dp_nativeplugin": {
+    "android": {
+      "integrateType": "source",
+      "plugins": [
+        {
+          "type": "module",
+          "name": "QingshengIME",
+          "class": "com.qingsheng.ime.bridge.QingshengModule"
+        }
+      ]
+    }
+  }
+}

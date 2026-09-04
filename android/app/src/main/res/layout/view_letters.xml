@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/keyboard_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <HorizontalScrollView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/candidate_row"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="8dp" />
+        </HorizontalScrollView>
+
+        <TextView
+            android:id="@+id/key_mode_toggle"
+            android:layout_width="48dp"
+            android:layout_height="34dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="2dp"
+            android:background="@drawable/bg_key_special"
+            android:gravity="center"
+            android:text="@string/key_pinyin_on"
+            android:textColor="@color/key_text"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/key_back_to_ai"
+            android:layout_width="48dp"
+            android:layout_height="34dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="6dp"
+            android:background="@drawable/bg_button_accent"
+            android:gravity="center"
+            android:text="@string/key_back_to_ai"
+            android:textColor="@color/accent_text"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rows_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="4dp" />
+</LinearLayout>

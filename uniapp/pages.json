@@ -1,0 +1,27 @@
+{
+  "pages": [
+    {
+      "path": "pages/index/index",
+      "style": { "navigationBarTitleText": "高情商 AI" }
+    },
+    {
+      "path": "pages/settings/settings",
+      "style": { "navigationBarTitleText": "设置" }
+    },
+    {
+      "path": "pages/skill/skill",
+      "style": { "navigationBarTitleText": "策略知识库" }
+    },
+    {
+      "path": "pages/history/history",
+      "style": { "navigationBarTitleText": "聊天记录" }
+    }
+  ],
+  "globalStyle": {
+    "navigationBarBackgroundColor": "#101012",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#101012",
+    "navigationBarTitleText": "高情商输入法",
+    "app-plus": { "background": "#101012" }
+  }
+}

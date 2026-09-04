@@ -1,0 +1,23 @@
+{
+  "name": "高情商输入法",
+  "appid": "",
+  "description": "完全离线的 AI 输入法配套设置应用",
+  "versionName": "1.0.0",
+  "versionCode": "100",
+  "transformPx": false,
+  "app-plus": {
+    "usingComponents": true,
+    "nvueStyleCompiler": "uni-ci",
+    "compilerVersion": 3,
+    "nativePlugins": {
+      "QingshengIME": {
+        "__plugin_info__": {
+          "name": "QingshengIME",
+          "type": "module",
+          "description": "高情商输入法原生能力桥"
+        }
+      }
+    }
+  },
+  "vueVersion": "3"
+}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="keyboard_bg">#1C1C1E</color>
+    <color name="panel_bg">#151517</color>
+    <color name="key_bg">#2C2C2E</color>
+    <color name="key_bg_special">#3A3A3C</color>
+    <color name="key_bg_pressed">#48484A</color>
+    <color name="key_text">#F2F2F7</color>
+    <color name="key_text_secondary">#98989F</color>
+    <color name="accent">#7C5CFF</color>
+    <color name="accent_soft">#2E2A4D</color>
+    <color name="accent_text">#FFFFFF</color>
+    <color name="card_bg">#242428</color>
+    <color name="card_stroke">#333338</color>
+    <color name="style_tag_natural">#34C759</color>
+    <color name="style_tag_gentle">#FF6482</color>
+    <color name="style_tag_funny">#FFB340</color>
+    <color name="status_ok">#34C759</color>
+    <color name="status_warn">#FFB340</color>
+    <color name="home_bg">#101012</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+</resources>
