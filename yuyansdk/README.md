@@ -1,0 +1,167 @@
+# 语燕输入法SDK
+雨燕以其敏捷、优雅的飞行姿态，在雨天依然够飞翔、不畏艰险、勇往直前的飞翔态度，被赋予**灵巧、聪明、伶俐、积极、创新**的寓意。语言是人类交流的基本工具，是最重要的文化载体，输入方式是语言交流和信息传递的重要环节，使语言交流变得更加**高效、便捷**。  
+[语燕输入法](https://github.com/gurecn/YuyanIme)秉承这些特点，以“**易用、快速、准确**”为核心理念，追求极致、卓越、流畅的输入体验。 在设计上，语燕输入法借鉴主流的谷歌拼音、微信输入法等主流输入法精华，追求整体简洁大方，易于上手。支持多种输入方式，规划包括拼音、手写、语音等，满足不同用户的输入需求。支持丰富的个性化设置选项，用户可以根据自己的喜好进行自定义设置，让输入更加符合个人习惯。
+
+## 设计原则：
+### 纯输入功能，主打轻快。
+喜欢简洁的我看到当前主流拼音输入法工具软件逐渐趋向复杂，软件内各种眼花缭乱的无用功能以及烦人的广告让我无法忍受。  
+**因此我想要定制出一款简洁、实用、专一的拼音输入法；**
+### 最小、必要的权限原则，更安全。
+当前主流输入法获取各类非必需权限，无视用户隐私，随意上传、保存、分析用户输入数据和使用习惯。虽然对普通用户的我们来说，一般不会出现重大事故，但我希望自己的秘密只存于自己的手机之内，不要在我不知情、未授权的情况下，把我的隐私拿走。    
+**谨遵循必要、最小权限，只为输入而生，更纯净、安全、高效。**  
+语燕输入法仅获取系统默认为输入法开启的`剪贴板`（剪贴板功能）、`设备运动与方向`（键盘随屏幕切换）、`媒体音控制`（按键音效）、`振动`（按键振动）权限，不获取网络、存储、定位、辅助功能等敏感权限，完全离线、所有数据不上传云端。不获取任何个人、手机、位置、存储、联系人、图片、视频、文档等信息。 
+### 源于Rime，但更易用。
+当前开放的输入法引擎中，[Rime引擎](https://github.com/rime/librime)已经趋向完善。然而对于非技术流用户来说，上手却并不容易，各种输入方案定制、兼容、编译问题，以及键盘的界面效果优化问题不断，这是开源软件的通病。  
+**但我想要开发出一款基于Rime引擎的安装即用，让没时间研究Rime的人也能用上好用的输入法；**
+### 输入模式更完善。
+最早先接触安卓平台的[同文输入法](https://github.com/osfans)，后接触[小企鹅输入法](https://github.com/fcitx5-android/fcitx5-android)，均支持Rime引擎方案，在输入模块能满足大部分需求。但小企鹅输入法不支持九宫格键盘，同文输入法候选词不便且无法选择九键拼音组合。  
+语燕输入法优化Rime引擎九键输入方案，支持拼音选择、超级简拼、词语联想等实用功能，并内置丰富输入方案，支持双拼、简拼、乱序、笔画、手写等方案。内置丰富词库，支持绝大部分输出场景，提升输入效率。
+语燕输入法励志做一款**不但能用，并且好用，不断优化，突破自身**的输入法。  
+### 个性化定制，更贴心。
+手机屏幕越来越大，但在走路时，一手提东西，一手打字回复消息对手小的我来说是个头疼的问题。选择候选词够不到、选择出错屡屡出现，因此我开发单手模式、悬浮键盘。  
+输入数字要么切换到数字键盘，要么长按按键输入，对输入来说都不便捷，因此我开发了键盘数字行。  
+夜间输入时，屏幕刺眼，因此我定制了深色主题自动切换功能。  
+中文联想、长词匹配、编辑键盘、常用语、剪贴板、花漾字、全面屏扩展等等，我们也等等，见证更多贴心定制功能的完善。只要我们还年轻，语燕输入法就会一直向雨而翔。
+
+## 实现功能：
++ 方案内置：全拼（九宫格、全键）、双拼(小鹤、智能ABC、自然码、紫光、微软、搜狗、乱序17)、手写、五笔画；支持简拼、全拼；
++ 英文输入：智能全键英文输入；
++ 词库拓展：支持雾凇词库、白霜词库等多种词库拓展，输入体验良好；
++ 符号输入：中文、英文、数学、颜文字、EMOJI表情输入、微信特效表情；
++ 数字输入：数字键盘输入、键盘数字行输入；
++ 键盘自定义：自定义菜单栏、主题、深色模式、键盘调节、键盘数字行、键盘位置移动；
++ 单手键盘：左、右手模式切换；
++ 悬浮键盘：悬浮键盘模式，键盘拖拽、移动；
++ 花漾字输入：火星文（焱暒妏）、 花藤字（ζั͡花ั͡藤ั͡字ั͡✾）、凌乱字（"҉҉҉凌҉҉҉乱҉҉҉字҉҉҉）、发芽字（发ོ芽ོ字ོ）、雾霾字（҈҈҈҈雾҈҈҈҈霾҈҈҈҈字҈҈҈҈）、禁止查看（禁⃠止⃠查⃠看⃠）、长草字（"҈长҉҉҈草҉҉҈字҉）、起风了（=͟͟͞͞风=͟͟͞͞太=͟͟͞͞大=͟͟͞͞）花漾输入；
++ 拼音输入扩展：支持繁体、简体，支持中英文混输，支持表情描述输入；
++ 剪切板：支持剪切板联想显示、剪切板及清空操作；
++ 常用语：支持自定义常用语、常用语快捷输入、编辑、删除等操作；
++ 全面屏键盘优化：支持全面屏键盘优化导航栏功能；
++ 隐藏输入法图标：支持隐藏输入法图标功能。
+
+## 已知问题：
+* 小米手机中键盘菜单点击设置等无反应:  
+  由于小米手机中键盘跳转应用界面需借助`后台弹出界面`权限，该权限需用户手动开启：设置-应用管理-语燕输入法-权限管理-开启`后台弹出界面`权限即可。
+* 三星手机按键音量调节无效:  
+  语燕输入法使用系统`通知`音量作为按键默认音量，但不同手机表现不同。输入法会以手机系统音量设置为前提，当手机静音时，无输入法按键音。当手机未静音时，以`通知`音量大小为基准进行调节。在三星手机中，基于`系统`音量大小进行调解。
+* 在输入一半内容时切换横竖屏，较大概率导致横屏模式屏幕触摸无效，仅能点击键盘按键。
+  临时方案：切换横竖屏前，确保输入框内容为空。
+
+## 运行环境：
+> gradle:8.3.2  
+> kotlin-gradle-plugin:1.9.22  
+> kotlin-serialization:2.0.0  
+> Android minSdk：23  
+> Android targetSdk：35  
+> JDK: penjdk version "17.0.11" 2024-04-16
+
+## 构建
+### 1. 克隆此项目并拉取所有子模块。
+```sh
+git clone git@github.com:gurecn/yuyansdk.git
+```
+### 2. 导入Android Studio
+建议使用最新、稳定版本，本人使用`Android Studio Narwhal Feature Drop | 2025.1.2`版本。
+### 3 运行
+#### 3.1 独立 Module 运行
+导入项目后，执行`build.gradle`中task`makeaar`,待编译出对应的依赖资源后，放置到其他项目内进行依赖使用，具体调用方式参考[语燕输入法](https://github.com/gurecn/YuyanIme)
+#### 3.1 应用内代码依赖
+在Android Studio其他应用项目内，import Module操作导入项目后，在原应用`build.gradle`中添加项目依赖：`implementation project(':yuyansdk')`，然后更新项目即可。具体调用方式参考[语燕输入法](https://github.com/gurecn/YuyanIme)
+
+## 键盘预览：
+| 九宫键盘 | 全拼键盘 | 乱序17 |
+| - | - | - |
+| ![九宫格拼音键盘](./images/t9_pinyin.jpg) | ![全键拼音键盘](./images/qwerty_pinyin.jpg) | ![乱序17拼音](./images/double_lx17.jpg) |
+
+| 双拼键盘 | 笔画键盘 | 手写键盘 |
+| - | - | - |
+| ![双拼键盘](./images/double_pinyin.jpg) | ![笔画键盘](./images/stroke_pinyin.jpg) | ![手写键盘](./images/writing_pinyin.jpg) |
+
+| 英语键盘 | 数字键盘 | 编辑键盘 |
+| - | - | - |
+| ![英语键盘](./images/qwerty.jpg) |  ![数字键盘](./images/number.jpg) | ![编辑键盘](./images/textedit.jpg) |
+
+| 剪切板 | 单手键盘 | 悬浮键盘 |
+| - | - | - |
+| ![剪切板](./images/clipboard.jpg) | ![单手键盘](./images/onehand.jpg) | ![悬浮键盘](./images/float.jpg) |
+
+| 表情键盘 | 微信特效 | 数字行 |
+| - | - | - |
+| ![表情键盘](./images/emoji.jpg) | ![微信特效](./images/emoji_wechat.jpg) | ![数字行](./images/number_line.jpg) |
+
+| 深色主题 | 设置菜单 | 物理键盘 |
+| - | - | - |
+| ![深色主题](./images/dark.jpg) | ![设置菜单](./images/setting.jpg) | ![物理键盘](./images/hardware_keyboard.jpg) |
+
+## 许可证与商业授权声明
+本项目 [yuyansdk](https://github.com/gurecn/yuyansdk) 承诺，依据 [BSD-3-Clause license 许可证](./LICENSE) 条款**永久面向开源社区、个人用户免费开放使用，不上传输入数据**。为保障项目持续性，采用**双授权模式**：
+### 一、开源代码授权（BSD 3-Clause）
+您在遵守 BSD 3-Clause License 全部条款的前提下，可以自由地：
+- 使用、研究本仓库中的公开源代码；
+- 修改本仓库中的公开源代码；
+- 分发本仓库公开源代码的原始或修改后的版本（需保留上述版权声明和免责声明）。
+- **特别说明：** 根据 BSD 3-Clause 协议，您可以将这些公开源代码集成到您的任何项目（包括闭源商业项目）中，**无需**公开您的项目源码。
+### 二、预编译闭源库（libyuyanime.so）的技术限制与商业授权
+本项目分发的预编译闭源动态库 **不适用 BSD 3-Clause 协议**，其使用受以下条件及商业授权约束：
+在您使用我们提供的**预编译二进制文件（.so）** 时，需遵守以下技术使用条款：
+#### 未获得商业授权
+- 您可以将 SDK 集成到您的应用中进行调试、测试或试用。
+- **注意事项：**预编译库内置技术保护措施。集成时**不得擅自修改或更换应用的包名（Package Name）**，否则将导致核心验证失败，输入功能无法正常初始化或运行。
+#### 获得商业授权
+- 我们将为您指定的应用包名提供专属预编译库文件，**解除试用期及包名绑定的技术限制**，确保您的应用长期、稳定运行。
+### 三、重要澄清
+上述技术限制**仅针对我们分发的预编译闭源库文件**。  
+**特别说明**：本仓库公开的源代码为上层调用框架及接口层代码，**不包含**我们对 librime 核心库的优化及修改源码。如果您希望构建一个不受包名限制的核心库，您有以下合法途径：
+1. 依据 BSD 3-Clause 协议，自行获取并修改上游 [librime](https://github.com/rime/librime) 的原始代码，独立实现您所需的功能优化；
+2. 联系我们获取商业授权版本，以获得无技术限制的预编译库。
+### 四、上游版权声明
+本 SDK 包含来自开源项目 [librime](https://github.com/rime/librime) 的修改代码。librime 遵循 **BSD 3-Clause License**。（点击展开查看完整文本）：
+
+<details>
+<summary>📄 librime BSD 3-Clause 许可证原文</summary>
+
+Copyright (c) 2014, RIME Developers
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are
+met:
+
+* Redistributions of source code must retain the above copyright
+  notice, this list of conditions and the following disclaimer.
+
+* Redistributions in binary form must reproduce the above copyright
+  notice, this list of conditions and the following disclaimer in
+  the documentation and/or other materials provided with the
+  distribution.
+
+* Neither the name of the copyright holder nor the names of its
+  contributors may be used to endorse or promote products derived
+  from this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+"AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+</details>
+
+## 联系作者：
+访问我的资源: <a href="https://github.com/gurecn">https://github.com/gurecn</a>
+
+给我发送邮箱：[gurecn@163.com](mailto:gurecn@163.com)
+
+## 鸣谢：
+感谢以下优秀的开源社区贡献：
+- [RIME](http://rime.im)
+- [同文输入法](https://github.com/osfans)
+- [小企鹅输入法](https://github.com/fcitx5-android/fcitx5-android)
+- [雾凇拼音](https://github.com/iDvel/rime-ice)
+- [白霜拼音](https://github.com/gaboolic/rime-frost)
